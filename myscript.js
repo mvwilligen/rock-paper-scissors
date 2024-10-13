@@ -1,4 +1,4 @@
-console.log("Hello world!")
+console.log("rock-paper-scissors")
 
 function getComputerChoice(max) {
 
@@ -56,19 +56,18 @@ function playRound() {
     let computer = getComputerChoice(3)
     let human    = getHumanChoice()
 
-    console.log(computer, human)
+    // console.log(computer, human)
 
     let result = ""
 
-    if (computer == human) { result = "it is a tie" ;
-    } else if (computer == "rock"     && human == "paper")    { h++; result = "human";    
-    } else if (computer == "rock"     && human == "scissors") { c++; result = "computer";
-    } else if (computer == "paper"    && human == "scissors") { h++; result = "human";
-    } else if (computer == "paper"    && human == "rock")     { c++; result = "computer";
-    } else if (computer == "scissors" && human == "rock")     { h++; result = "human";
-    } else if (computer == "scissors" && human == "paper")    { c++; result = "computer";
-    } else { result = "unknown"; }
+    if (computer == human) { result = "it is a tie" ;}
+      else if (computer == "rock"     && human == "paper")    { h++; result = "human";    }
+      else if (computer == "rock"     && human == "scissors") { c++; result = "computer"; }
+      else if (computer == "paper"    && human == "scissors") { h++; result = "human";    }
+      else if (computer == "paper"    && human == "rock")     { c++; result = "computer"; }
+      else if (computer == "scissors" && human == "rock")     { h++; result = "human";    }
+      else if (computer == "scissors" && human == "paper")    { c++; result = "computer"; }
+      else { result = "unknown"; }
 
     console.log("computer: " + computer + " - human: " + human + " - winner: " + result + " c:" + c + " h:" + h)
-
 }
